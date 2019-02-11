@@ -4,15 +4,43 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>org.eclipse.paho</groupId>
-		<artifactId>java-parent</artifactId>
-		<version>1.2.1-SNAPSHOT</version>
-	</parent>
 
 	<artifactId>org.eclipse.paho.mqttv5.common</artifactId>
 	<name>org.eclipse.paho.mqttv5.common</name>
 
+
+	<groupId>org.eclipse.paho</groupId>
+	<version>1.2.1-SNAPSHOT</version>
+
+
+	<properties>
+		<!-- source & target java version for MQTT Client -->
+		<mqttclient.java.version>1.7</mqttclient.java.version>
+		<!-- source & target java version for others modules -->
+		<java.version>1.7</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<build.level>${maven.build.timestamp}</build.level>
+		<tycho.version>1.1.0</tycho.version>
+		<junit.version>4.12</junit.version>
+		<javadoc.version>3.0.1</javadoc.version>
+		<mvnsource.version>3.0.1</mvnsource.version>
+		<jacoco.version>0.8.2</jacoco.version>
+		<test.exclude>**/*ConformantTest.java</test.exclude>
+		<download.location>/home/data/httpd/download.eclipse.org/paho/releases/${project.version}/Java</download.location>
+	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Release Repository</name>
+			<url>https://artifactory.bls.ch/artifactory/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Snapshots Repository</name>
+			<url>https://artifactory.bls.ch/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<dependencies>
 	<dependency>

@@ -47,14 +47,14 @@
 
 	<distributionManagement>
 		<repository>
-			<id>repo.eclipse.org</id>
-			<name>Paho Repository - Releases</name>
-			<url>https://repo.eclipse.org/content/repositories/paho-releases/</url>
+			<id>releases</id>
+			<name>Release Repository</name>
+			<url>https://artifactory.bls.ch/artifactory/libs-release-local</url>
 		</repository>
 		<snapshotRepository>
-			<id>repo.eclipse.org</id>
-			<name>Paho Repository - Snapshots</name>
-			<url>https://repo.eclipse.org/content/repositories/paho-snapshots/</url>
+			<id>snapshots</id>
+			<name>Snapshots Repository</name>
+			<url>https://artifactory.bls.ch/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 
