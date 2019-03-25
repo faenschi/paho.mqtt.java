@@ -36,7 +36,7 @@
 	<name>org.eclipse.paho.mqttv5.client</name>
 
 	<groupId>org.eclipse.paho</groupId>
-	<version>1.2.2-SNAPSHOT</version>
+	<version>1.2.1-SNAPSHOT</version>
 
 	<repositories>
 		<repository>
@@ -69,7 +69,7 @@
 		<dependency>
 			<groupId>org.eclipse.paho</groupId>
 			<artifactId>org.eclipse.paho.mqttv5.common</artifactId>
-			<version>1.2.2-SNAPSHOT</version>
+			<version>1.2.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
